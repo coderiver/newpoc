@@ -5,8 +5,15 @@
 	font-weight: normal
 	font-style: normal
 
-$icon-sepa: "\EA01"
-$icon-skrill: "\EA02"
+$icon-next: "\EA01"
+$icon-prev: "\EA02"
+$icon-select: "\EA03"
+$icon-sepa: "\EA04"
+$icon-skrill: "\EA05"
+$icon-step1: "\EA06"
+$icon-step2: "\EA07"
+$icon-step3: "\EA08"
+$icon-step4: "\EA09"
 
 
 %icon
@@ -23,7 +30,21 @@ $icon-skrill: "\EA02"
 	@extend %icon
 	display: inline-block
 
+.icon-next:before
+	content: $icon-next
+.icon-prev:before
+	content: $icon-prev
+.icon-select:before
+	content: $icon-select
 .icon-sepa:before
 	content: $icon-sepa
 .icon-skrill:before
 	content: $icon-skrill
+.icon-step1:before
+	content: $icon-step1
+.icon-step2:before
+	content: $icon-step2
+.icon-step3:before
+	content: $icon-step3
+.icon-step4:before
+	content: $icon-step4
