@@ -19,45 +19,16 @@ div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus {
 ul, ol { list-style-type: none; }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
+html { box-sizing: border-box; }
+
+* { box-sizing: border-box; }
+*:before, *:after { box-sizing: border-box; }
+
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-* { box-sizing: border-box; }
-
-*:before, *:after { box-sizing: border-box; }
-
-html { font-size: 10px; -webkit-tap-highlight-color: transparent; }
-
-body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857; color: #333333; background-color: #fff; }
-
-input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
-
-a { color: #337ab7; text-decoration: none; }
-a:hover, a:focus { color: #23527c; text-decoration: underline; }
-a:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
-
-figure { margin: 0; }
-
-img { vertical-align: middle; }
-
-.img-responsive { display: block; max-width: 100%; height: auto; }
-
-.img-rounded { border-radius: 6px; }
-
-.img-thumbnail { padding: 4px; line-height: 1.42857; background-color: #fff; border: 1px solid #ddd; border-radius: 4px; transition: all 0.2s ease-in-out; display: inline-block; max-width: 100%; height: auto; }
-
-.img-circle { border-radius: 50%; }
-
-hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #eeeeee; }
-
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-
-.sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; }
-
-[role="button"] { cursor: pointer; }
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small { font-weight: normal; line-height: 1; color: #777777; }
 
@@ -573,7 +544,47 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 .visible-print-inline { display: none !important; }
 
 .visible-print-inline-block { display: none !important; }
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+@font-face { font-family: museosanscyrl_300; src: url("fonts/museosanscyrl_300.eot"); src: url("fonts/museosanscyrl_300.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_300.woff2") format("woff2"), url("fonts/museosanscyrl_300.woff") format("woff"), url("fonts/museosanscyrl_300.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: museosanscyrl_500; src: url("fonts/museosanscyrl_500.eot"); src: url("fonts/museosanscyrl_500.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_500.woff2") format("woff2"), url("fonts/museosanscyrl_500.woff") format("woff"), url("fonts/museosanscyrl_500.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: museosanscyrl_700; src: url("fonts/museosanscyrl_700.eot"); src: url("fonts/museosanscyrl_700.eot?#iefix") format("embedded-opentype"), url("fonts/museosanscyrl_700.woff2") format("woff2"), url("fonts/museosanscyrl_700.woff") format("woff"), url("fonts/museosanscyrl_700.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: museocyrl_500; src: url("fonts/museocyrl_500.eot"); src: url("fonts/museocyrl_500.eot?#iefix") format("embedded-opentype"), url("fonts/museocyrl_500.woff2") format("woff2"), url("fonts/museocyrl_500.woff") format("woff"), url("fonts/museocyrl_500.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+html { font-size: 62.5%; }
+
+body { font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 1.8rem; line-height: 1.2; color: #333; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+.header { border-top: 4px solid #ed1c24; }
+.header .logo { margin: 3.3rem 0 0; }
+.header .btn-group { clear: both; text-align: right; }
+
+.logo { display: inline-block; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+
+.lang { float: right; margin: 2rem 0; text-align: right; }
+.lang__item { display: inline-block; vertical-align: middle; }
+.lang__item.is-active .lang__link { color: #ed1c24; border-color: transparent; }
+.lang__link { color: #9b9b9b; border-bottom: 1px solid; text-transform: uppercase; transition: color 0.3s; }
+.lang__link:hover { color: #ed1c24; }
+
+.nav { margin: 2rem 0; font-size: 0; }
+.nav__item { display: inline-block; vertical-align: middle; margin-left: 3%; font-size: 1.8rem; }
+.nav__item:first-child { margin-left: 0; }
+.nav__item:hover .nav__link { color: #ed1c24; }
+.nav__link { display: block; color: #333; transition: color 0.3s; }
+
+.btn-group { font-size: 0; }
+.btn-group .btn { margin-left: 4rem; }
+.btn-group .btn:first-child { margin-left: 0; }
+
+.btn { display: inline-block; padding: 1.5rem 3rem; text-transform: uppercase; text-align: center; border-radius: 4px; font-family: "museosanscyrl_500", Arial, Helvetica, sans-serif; font-size: 1.8rem; line-height: 1; transition: background 0.3s; }
+.btn:active { box-shadow: none; }
+.btn_default { background: #f7f7f7; color: #ed1c24; box-shadow: inset 0 -2px 0 #cecece; }
+.btn_default:hover { background: #eaeaea; }
+.btn_default:active { background: #e5e5e5; }
+.btn_action { background: #ed1c24; color: #fff; box-shadow: inset 0 -2px 0 #C4161C; }
+.btn_action:hover { background: #de1219; }
+.btn_action:active { background: #d41118; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -732,8 +743,8 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
  .col-md-offset-12{ margin-left: 100%; }
  .modal-lg{ width: 900px; } }
 
-@media (min-width: 1200px){
- .container{ width: 1170px; }
+@media (min-width: 1230px){
+ .container{ width: 1200px; }
  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{ float: left; }
  .col-lg-1{ width: 8.33333%; }
  .col-lg-2{ width: 16.66667%; }
@@ -829,7 +840,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
  .visible-sm-inline-block{ display: inline-block !important; }
  .hidden-sm{ display: none !important; } }
 
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 992px) and (max-width: 1229px){
  .visible-md{ display: block !important; }
  table.visible-md{ display: table !important; }
  tr.visible-md{ display: table-row !important; }
@@ -850,8 +861,6 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
  .hidden-print{ display: none !important; } }
 
 @media only screen and (max-width: 1024px){
- div{ display: block; }
- p{ background: red; }
  div{ display: block; }
  p{ background: red; } }
 

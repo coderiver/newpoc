@@ -46,12 +46,114 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
+$primary: #ed1c24
+$secondary: #f7f7f7 
+$text: #333
 
++font(museosanscyrl_300, museosanscyrl_300)
+=msans_300
+	font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif
 
++font(museosanscyrl_500, museosanscyrl_500)
+=msans_500
+	font-family: "museosanscyrl_500", Arial, Helvetica, sans-serif
+
++font(museosanscyrl_700, museosanscyrl_700)
+=msans_700
+	font-family: "museosanscyrl_700", Arial, Helvetica, sans-serif
+	
++font(museocyrl_500, museocyrl_500)
+=m_500
+	font-family: "museocyrl_500", Arial, Helvetica, sans-serif
+html
+	font-size: 62.5%
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
-	line-height: 1.4
-
-
+	+msans_300
+	font-size: 1.8rem
+	line-height: 1.2
+	color: $text 
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
 // common blocks
+.header
+	border-top: 4px solid $primary 
+	.logo
+		margin: 3.3rem 0 0 
+	.btn-group
+		clear: both
+		text-align: right
+.logo
+	display: inline-block
+	+hide-text
+.lang
+	float: right
+	margin: 2rem 0
+	text-align: right
+	&__item
+		display: inline-block
+		vertical-align: middle
+		&.is-active
+			.lang__link
+				color: $primary
+				border-color: transparent  
+	&__link
+		color: #9b9b9b 
+		border-bottom: 1px solid
+		text-transform: uppercase 
+		transition: color .3s
+		&:hover
+			color: $primary 
+.nav
+	margin: 2rem 0 
+	font-size: 0
+	&__item
+		display: inline-block
+		vertical-align: middle
+		margin-left: 3%
+		font-size: 1.8rem
+		&:first-child
+			margin-left: 0
+		&:hover
+			.nav__link
+				color: $primary 
+	&__link
+		display: block
+		color: $text
+		+tr(color .3s)
+
+.btn-group
+	font-size: 0
+	.btn
+		margin-left: 4rem
+		&:first-child
+			margin-left: 0
+.btn
+	display: inline-block
+	padding: 1.5rem 3rem
+	text-transform: uppercase
+	text-align: center
+	border-radius: 4px 
+	+msans_500
+	font-size: 1.8rem
+	line-height: 1
+	+tr(background .3s)
+	&:active
+		box-shadow: none
+	&_default
+		background: $secondary
+		color: $primary 
+		box-shadow: inset 0 -2px 0 #cecece 
+		&:hover
+			background: darken($secondary, 5%)
+		&:active
+			background: darken($secondary, 7%)
+	&_action
+		background: $primary 
+		color: #fff
+		box-shadow: inset 0 -2px 0 #C4161C 
+		&:hover
+			background: darken($primary, 5%)
+		&:active
+			background: darken($primary, 7%)
