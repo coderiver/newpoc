@@ -1,9 +1,56 @@
-// Normally mainpage styles
-// body
-// 	+s(coderiver)
-div
-	+r(1024)
-		display: block
-p
-	+r(1024)
-		background: red
+.slider
+	position: relative
+	overflow: hidden
+	&__nav
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		
+	&__info
+		position: relative
+		z-index: 2
+		padding: 2rem 5.8rem 2rem 0 
+		width: 50%
+		float: right
+		+msans_300
+		font-size: 2rem
+		line-height: 1.5
+		min-height: 49rem
+	&__title
+		width: 85%
+		color: #fff
+		+m_500
+		font-size: 6rem
+		line-height: 1.2
+	&__img
+		position: absolute
+		left: 0
+		top: 0
+		right: 0
+		img
+			display: block
+			width: 100%
+			height: auto
+.steps-slider
+	position: relative
+	+clr
+.step
+	position: relative
+	padding: 0 4%
+	float: left 
+	text-align: center
+	width: 25%
+	&:after
+		content: ""
+		position: absolute
+		left: 100%
+		margin-left: -24px
+		top: 3.5rem
+		+s(arrow1)
+	&:last-child
+		&:after
+			display: none
+	i
+		margin-bottom: 4rem
+		font-size: 7rem
