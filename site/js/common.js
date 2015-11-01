@@ -1,7 +1,13 @@
 $(document).ready(function() {
-	var slider = $(".js-slider");
-	var sliderSet = {
-		dots: true
-	};
-	slider.slick(sliderSet);
+
+	
+	var logoSlider = $(".js-logo-slider");
+	var logoSliderOpt = {
+		slidesToShow: 5,
+		slidesToScroll: 5
+	}
+	logoSlider.slick(logoSliderOpt);
+
+	$("[data-slick]").slick();
+
 });

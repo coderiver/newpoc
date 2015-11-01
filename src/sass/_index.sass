@@ -34,6 +34,17 @@
 			display: block
 			width: 100%
 			height: auto
+.section
+	margin: 3rem 0
+
+	&_start
+		padding: 3rem 0 4.5rem 
+		background: $bg
+		text-align: center 
+		.title
+			margin: 0 0 5.5rem
+
+
 .steps-slider
 	position: relative
 	+clr
@@ -56,3 +67,25 @@
 	i
 		margin-bottom: 4rem
 		font-size: 7rem
+.logo-slider
+	margin-bottom: 5.5rem
+	.slick-list
+		margin: 0 7.5rem 
+	.slick-prev,
+	.slick-next
+		bottom: auto
+		top: 50%
+		margin-top: -48px
+	.slick-prev
+		&:after
+			+sp(prev2)
+	.slick-next
+		&:after
+			+sp(next2)
+	a
+		display: block
+	img
+		margin: 0 auto 
+.status
+	text-align: center		
+

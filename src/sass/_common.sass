@@ -51,6 +51,7 @@ $secondary: #f7f7f7
 $text: #333
 $border: #ddd
 $input: #ddd
+$bg: #f0f0f0
 =round
 	border-radius: 5px 
 +font(museosanscyrl_300, museosanscyrl_300)
@@ -88,6 +89,12 @@ a
 	text-decoration: none
 	&:hover
 		text-decoration: none
+.link
+	color: $primary
+	border-bottom: 1px solid
+	+tr(border .3s)
+	&:hover
+		border-color: transparent 
 // common blocks
 .header
 	border-top: 4px solid $primary 
@@ -143,7 +150,7 @@ a
 			margin-left: 0
 .btn
 	display: inline-block
-	padding: 1.5rem 3rem
+	padding: 1.6rem 4.5rem
 	text-transform: uppercase
 	text-align: center
 	border-radius: 4px 
@@ -169,6 +176,9 @@ a
 			background: darken($primary, 5%)
 		&:active
 			background: darken($primary, 7%)
+	&_width
+		width: 50rem
+		text-align: center
 .btn-link
 	border: 2px solid
 	padding: 1rem
@@ -211,9 +221,8 @@ a
 	.form-group
 		.control-label
 			padding: 13px 0 0 15px
-	.btn
+	.btn_width
 		margin: 4rem 0 
-		padding: 1.5rem 17.7%
 	.total
 		margin: 2rem 0 3rem
 .form-group
@@ -239,16 +248,9 @@ a
 		width: 3px 
 		background: #fff 
 .form-control
-	border-radius: 2px 
-	height: 4.4rem
-	font-size: 1.6rem
 	+msans_500
-	color: $text 
-	box-shadow: none
-	border-color: $input 
 	&:focus
 		box-shadow: none
-		border-color: #000 
 		+ .input-group-addon
 			border-color: #000 
 .radio-inline
@@ -267,3 +269,5 @@ a
 	text-align: center
 .meta-text
 	font-size: 1.2rem
+.control-label
+	font-size: 1.6rem
