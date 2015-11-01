@@ -50,6 +50,7 @@ $primary: #ed1c24
 $secondary: #f7f7f7 
 $text: #333
 $border: #ddd
+$input: #ddd
 =round
 	border-radius: 5px 
 +font(museosanscyrl_300, museosanscyrl_300)
@@ -79,7 +80,7 @@ $border: #ddd
 html
 	font-size: 62.5%
 body
-	+msans_300
+	+msans_500
 	font-size: 1.8rem
 	line-height: 1.2
 	color: $text 
@@ -187,3 +188,82 @@ a
 	border: 1px solid $border
 	padding: 5.5rem 
 	+round
+.form-horizontal
+	.row
+		margin-top: 2.3rem
+		margin-bottom: 2.3rem
+		&:first-child
+			margin-top: 0
+		&:last-child
+			margin-bottom: 0
+	.text-left
+		.control-label
+			text-align: left
+		.radio-inline
+			padding-left: 0
+	.text-right
+		.control-label
+			text-align: right
+		.radio-inline
+			padding-right: 0
+	.control-label
+		font-weight: normal
+	.form-group
+		.control-label
+			padding: 13px 0 0 15px
+	.btn
+		margin: 4rem 0 
+		padding: 1.5rem 17.7%
+	.total
+		margin: 2rem 0 3rem
+.form-group
+	font-size: 1.6rem
+	+msans_500
+.input-group-addon
+	background: none
+	padding: .6rem 
+	position: relative
+	color: #999
+	font-size: 1.6rem
+	border-left: 0
+	border-radius: 0 2px 2px 0 
+	border-color: $input 
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s
+	&:before
+		content: ""
+		position: absolute
+		left: -1px
+		top: 0
+		bottom: 0
+		z-index: 2
+		width: 3px 
+		background: #fff 
+.form-control
+	border-radius: 2px 
+	height: 4.4rem
+	font-size: 1.6rem
+	+msans_500
+	color: $text 
+	box-shadow: none
+	border-color: $input 
+	&:focus
+		box-shadow: none
+		border-color: #000 
+		+ .input-group-addon
+			border-color: #000 
+.radio-inline
+	+msans_500
+	font-size: 1.6rem
+	input[type="radio"]
+		margin: 0 .7rem 0 0
+		position: static
+	span, input
+		display: inline-block
+	&_right
+		input[type="radio"]
+			margin: 0 0 0 .7rem
+.total
+	font-size: 2.8rem
+	text-align: center
+.meta-text
+	font-size: 1.2rem
