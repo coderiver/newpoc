@@ -565,6 +565,8 @@ a:hover { text-decoration: none; }
 
 .logo { display: inline-block; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
 
+.logo-nova-poshta { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+
 .lang { float: right; margin: 2rem 0; text-align: right; }
 .lang__item { display: inline-block; vertical-align: middle; }
 .lang__item.is-active .lang__link { color: #ed1c24; border-color: transparent; }
@@ -576,6 +578,28 @@ a:hover { text-decoration: none; }
 .nav__item:first-child { margin-left: 0; }
 .nav__item:hover .nav__link { color: #ed1c24; }
 .nav__link { display: block; color: #333; transition: color 0.3s; }
+
+.footer { background-color: #ed1c24; }
+.footer__in { padding: 2.5rem 0 2rem; }
+.footer__nav li { margin: 0.7rem 0; }
+.footer__nav li a { color: #fff; font-size: 1.5rem; text-shadow: 1px 1px 0 #ed1c24, -1px 1px 0 #ed1c24, 2px 0 0 #ed1c24, -2px 0 0 #ed1c24; position: relative; z-index: 2; }
+.footer__nav li a:after { content: ""; position: absolute; z-index: -1; left: 0; bottom: 0px; right: 0; height: 1px; border-bottom: 1px solid; }
+.footer__nav li a:hover:after { display: none; }
+.footer__meta { background: #780f13; color: #fff; font-size: 1.4rem; text-align: center; height: 100%; padding: 1.3rem 0 1rem; }
+.footer .payments { margin-bottom: 2rem; }
+.footer .logo-nova-poshta { margin: 3rem 0 2rem; display: block; }
+.footer .logo { margin-top: 5.3rem; }
+.footer .f-contacts { text-align: right; }
+.footer .f-contacts__in { text-align: left; }
+
+.feedback { color: #fff; font-size: 2rem; }
+.feedback li { margin: 1rem 0; }
+.feedback a { color: #fff; text-shadow: 1px 1px 0 #ed1c24, -1px 1px 0 #ed1c24, 2px 0 0 #ed1c24, -2px 0 0 #ed1c24; position: relative; z-index: 2; }
+.feedback a:after { content: ""; position: absolute; z-index: -1; left: 0; bottom: 0px; right: 0; height: 1px; border-bottom: 1px solid; }
+.feedback a:hover:after { display: none; }
+
+.payments { font-size: 0; }
+.payments img { margin-right: 10px; }
 
 .btn-group { font-size: 0; }
 .btn-group .btn { margin-left: 4rem; }
@@ -953,6 +977,11 @@ a:hover { text-decoration: none; }
  .visible-print-inline{ display: inline !important; }
  .visible-print-inline-block{ display: inline-block !important; }
  .hidden-print{ display: none !important; } }
+@media only screen and (max-width: 768px){
+ .footer__in{ text-align: center; }
+ .footer__nav{ display: inline-block; text-align: left; }
+ .footer .logo-nova-poshta{ display: none; }
+ .footer .logo{ margin-left: -4rem; } }
 
 
 

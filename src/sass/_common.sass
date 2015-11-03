@@ -106,6 +106,8 @@ a
 .logo
 	display: inline-block
 	+hide-text
+.logo-nova-poshta
+	+hide-text
 .lang
 	float: right
 	margin: 2rem 0
@@ -141,7 +143,85 @@ a
 		display: block
 		color: $text
 		+tr(color .3s)
+.footer
+	background-color: $primary
+	&__in
+		padding: 2.5rem 0 2rem
+		+r(768)
+			text-align: center
+	&__nav
+		li
+			margin: .7rem 0
+			a
+				color: #fff
+				font-size: 1.5rem
+				text-shadow: 1px 1px 0 $primary, -1px 1px 0 $primary, 2px 0 0 $primary, -2px 0 0 $primary
+				position: relative
+				z-index: 2
+				&:after
+					content: ''
+					position: absolute
+					z-index: -1 
+					left: 0
+					bottom: 0px
+					right: 0
+					height: 1px
+					border-bottom: 1px solid 
+				&:hover
+					&:after
+						display: none
+		+r(768)
+			display: inline-block
+			text-align: left
+	&__meta
+		background: #780f13
+		color: #fff
+		font-size: 1.4rem 
+		text-align: center
+		height: 100% 
+		padding: 1.3rem 0 1rem
+	.payments
+		margin-bottom: 2rem 
+	.logo-nova-poshta
+		margin: 3rem 0 2rem
+		display: block
+		+r(768)
+			display: none
+	.logo
+		margin-top: 5.3rem 
+		+r(768)
+			margin-left: -4rem 
+	.f-contacts
+		text-align: right
+		&__in
+			text-align: left
 
+.feedback
+	color: #fff
+	font-size: 2rem 
+	li
+		margin: 1rem 0 
+	a
+		color: #fff
+		text-shadow: 1px 1px 0 $primary, -1px 1px 0 $primary, 2px 0 0 $primary, -2px 0 0 $primary
+		position: relative
+		z-index: 2
+		&:after
+			content: ''
+			position: absolute
+			z-index: -1 
+			left: 0
+			bottom: 0px
+			right: 0
+			height: 1px
+			border-bottom: 1px solid 
+		&:hover
+			&:after
+				display: none
+.payments
+	font-size: 0
+	img
+		margin-right: 10px 		
 .btn-group
 	font-size: 0
 	.btn
