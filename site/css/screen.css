@@ -567,14 +567,14 @@ a:hover { text-decoration: none; }
 
 .logo-nova-poshta { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
 
-.lang { float: right; margin: 2rem 0; text-align: right; }
-.lang__item { display: inline-block; vertical-align: middle; }
+.lang { float: right; margin: 2rem 0 3.5rem; text-align: right; }
+.lang__item { display: inline-block; vertical-align: middle; margin-left: 2.75rem; }
 .lang__item.is-active .lang__link { color: #ed1c24; border-color: transparent; }
-.lang__link { color: #9b9b9b; border-bottom: 1px solid; text-transform: uppercase; transition: color 0.3s; }
+.lang__link { color: #9b9b9b; border-bottom: 1px solid; text-transform: uppercase; transition: color 0.3s; font-family: Arial, Helvetica, sans-serif; font-weight: 700; }
 .lang__link:hover { color: #ed1c24; }
 
-.nav { margin: 2rem 0; font-size: 0; }
-.nav__item { display: inline-block; vertical-align: middle; margin-left: 3%; font-size: 1.8rem; }
+.nav { margin: 3.3rem 0 3rem; font-size: 0; }
+.nav__item { display: inline-block; vertical-align: middle; margin-left: 4%; font-size: 1.8rem; }
 .nav__item:first-child { margin-left: 0; }
 .nav__item:hover .nav__link { color: #ed1c24; }
 .nav__link { display: block; color: #333; transition: color 0.3s; }
@@ -587,8 +587,8 @@ a:hover { text-decoration: none; }
 .footer__nav li a:hover:after { display: none; }
 .footer__meta { background: #780f13; color: #fff; font-size: 1.4rem; text-align: center; height: 100%; padding: 1.3rem 0 1rem; }
 .footer .payments { margin-bottom: 2rem; }
-.footer .logo-nova-poshta { margin: 3rem 0 2rem; display: block; }
-.footer .logo { margin-top: 5.3rem; }
+.footer .logo-nova-poshta { margin: 2rem 0; display: block; }
+.footer .logo { margin-top: 5rem; margin-left: -4rem; }
 .footer .f-contacts { text-align: right; }
 .footer .f-contacts__in { text-align: left; }
 
@@ -601,11 +601,14 @@ a:hover { text-decoration: none; }
 .payments { font-size: 0; }
 .payments img { margin-right: 10px; }
 
+.seo { margin-top: 5.5rem; }
+.seo p { line-height: 1.7; }
+
 .btn-group { font-size: 0; }
 .btn-group .btn { margin-left: 4rem; }
 .btn-group .btn:first-child { margin-left: 0; }
 
-.btn { display: inline-block; padding: 1.6rem 4.5rem; text-transform: uppercase; text-align: center; border-radius: 4px; font-family: "museosanscyrl_500", Arial, Helvetica, sans-serif; font-size: 1.8rem; line-height: 1; transition: background 0.3s; }
+.btn { display: inline-block; padding: 1.7rem 4.5rem; text-transform: uppercase; text-align: center; border-radius: 4px; font-family: "museosanscyrl_500", Arial, Helvetica, sans-serif; font-size: 1.8rem; line-height: 1; transition: background 0.3s; }
 .btn:active { box-shadow: none; }
 .btn_default { background: #f7f7f7; color: #ed1c24; box-shadow: inset 0 -2px 0 #cecece; }
 .btn_default:hover { background: #eaeaea; }
@@ -615,7 +618,7 @@ a:hover { text-decoration: none; }
 .btn_action:active { background: #d41118; }
 .btn_width { width: 50rem; text-align: center; }
 
-.btn-link { border: 2px solid; padding: 1rem; line-height: 1; color: #000; font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 2.4rem; line-height: 1; }
+.btn-link { border: 2px solid; padding: 0.7rem 1.5rem; line-height: 1; color: #000; font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 2.4rem; line-height: 1; }
 
 .title { margin: 6rem 0 6rem; color: #ed1c24; line-height: 1.18; font-size: 3.2rem; font-family: "museocyrl_500", Arial, Helvetica, sans-serif; text-align: center; }
 
@@ -630,8 +633,8 @@ a:hover { text-decoration: none; }
 .form-horizontal .text-right .radio-inline { padding-right: 0; }
 .form-horizontal .control-label { font-weight: normal; }
 .form-horizontal .form-group .control-label { padding: 13px 0 0 15px; }
-.form-horizontal .btn_width { margin: 4rem 0; }
-.form-horizontal .total { margin: 2rem 0 3rem; }
+.form-horizontal .btn_width { margin: 3rem 0; }
+.form-horizontal .total { margin: 5rem 0 3rem; }
 
 .form-group { font-size: 1.6rem; font-family: "museosanscyrl_500", Arial, Helvetica, sans-serif; }
 
@@ -670,10 +673,10 @@ a:hover { text-decoration: none; }
 
 .icon-step4:before { content: ""; }
 
-.slider { position: relative; overflow: hidden; }
+.slider { position: relative; overflow: hidden; margin: 0 -15px; }
 .slider__nav { position: absolute; left: 0; right: 0; top: 0; }
-.slider__info { position: relative; z-index: 2; padding: 2rem 5.8rem 2rem 0; width: 58%; float: right; font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 2rem; line-height: 1.5; min-height: 49rem; }
-.slider__info p { margin: 2rem 0 5rem; }
+.slider__info { position: relative; z-index: 2; padding: 2.7rem 5.8rem 2rem 0; width: 54%; float: right; font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 2rem; line-height: 1.5; min-height: 49rem; }
+.slider__info p { margin: 1rem 0 2.7rem; }
 .slider__title { width: 85%; color: #fff; font-family: "museocyrl_500", Arial, Helvetica, sans-serif; font-size: 6rem; line-height: 1.2; }
 .slider__img { position: absolute; left: 0; top: 0; right: 0; }
 .slider__img img { display: block; width: 100%; height: auto; }
@@ -685,10 +688,11 @@ a:hover { text-decoration: none; }
 .steps-slider { position: relative; *zoom: 1; }
 .steps-slider:after { content: " "; display: table; clear: both; }
 
-.step { position: relative; padding: 0 4%; float: left; text-align: center; width: 25%; }
-.step:after { content: ""; position: absolute; left: 100%; margin-left: -24px; top: 3.5rem; background-image: url("../img/icons.png"); width: 48px; height: 10px; background-position: 0px -100px; }
+.step { position: relative; padding: 0 3%; float: left; text-align: center; width: 25%; }
+.step:after { content: ""; position: absolute; left: 100%; margin-left: -24px; top: 3.5rem; background-image: url("../img/icons.png"); width: 48px; height: 10px; background-position: -66px -100px; }
 .step:last-child:after { display: none; }
 .step i { margin-bottom: 4rem; font-size: 7rem; }
+.step p { line-height: 1.6; }
 
 .logo-slider { margin-bottom: 5.5rem; }
 .logo-slider .slick-list { margin: 0 7.5rem; }
@@ -699,6 +703,8 @@ a:hover { text-decoration: none; }
 .logo-slider img { margin: 0 auto; }
 
 .status { text-align: center; }
+.status__arr { margin: 3rem 0 3rem; position: relative; display: block; }
+.status__arr i { display: block; margin: 2rem auto 0; background-image: url("../img/icons.png"); width: 62px; height: 25px; background-position: 0px -100px; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -731,11 +737,11 @@ a:hover { text-decoration: none; }
 .slick-next { right: 2rem; }
 .slick-next:after { background-image: url("../img/icons.png"); width: 38px; height: 96px; background-position: 0px 0px; }
 
-.slick-dots { position: absolute; bottom: 25px; margin: 0; left: 42%; text-align: left; white-space: nowrap; }
+.slick-dots { position: absolute; bottom: 25px; margin: 0; left: 46%; text-align: left; white-space: nowrap; }
 .slick-dots li { position: relative; display: inline-block; padding: 0 3px; }
-.slick-dots li.slick-active button { background: #fff; }
+.slick-dots li.slick-active button { background: #333; }
 .slick-dots li:before { display: none; }
-.slick-dots button { display: block; width: 2rem; height: 2rem; cursor: pointer; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; border-radius: 50%; border: 4px solid #fff; }
+.slick-dots button { display: block; width: 2.5rem; height: 2.5rem; cursor: pointer; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; border-radius: 50%; border: 4px solid #fff; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media (min-width: 768px){
@@ -980,8 +986,9 @@ a:hover { text-decoration: none; }
 @media only screen and (max-width: 768px){
  .footer__in{ text-align: center; }
  .footer__nav{ display: inline-block; text-align: left; }
- .footer .logo-nova-poshta{ display: none; }
- .footer .logo{ margin-left: -4rem; } }
+ .footer .logo-nova-poshta{ display: none; } }
+@media only screen and (min-width: 992px){
+ .form-horizontal .form-group-lg .control-label_big{ font-size: 2.4rem; } }
 
 
 

@@ -69,6 +69,10 @@ $bg: #f0f0f0
 +font(museocyrl_500, museocyrl_500)
 =m_500
 	font-family: "museocyrl_500", Arial, Helvetica, sans-serif
+	
+=reg
+	font-family: Arial, Helvetica, sans-serif
+
 =icon
 	font-family: "svgfont"
 	font-style: normal
@@ -110,11 +114,12 @@ a
 	+hide-text
 .lang
 	float: right
-	margin: 2rem 0
+	margin: 2rem 0 3.5rem
 	text-align: right
 	&__item
 		display: inline-block
 		vertical-align: middle
+		margin-left: 2.75rem 
 		&.is-active
 			.lang__link
 				color: $primary
@@ -124,15 +129,17 @@ a
 		border-bottom: 1px solid
 		text-transform: uppercase 
 		transition: color .3s
+		+reg
+		font-weight: 700 
 		&:hover
 			color: $primary 
 .nav
-	margin: 2rem 0 
+	margin: 3.3rem 0 3rem
 	font-size: 0
 	&__item
 		display: inline-block
 		vertical-align: middle
-		margin-left: 3%
+		margin-left: 4%
 		font-size: 1.8rem
 		&:first-child
 			margin-left: 0
@@ -183,14 +190,14 @@ a
 	.payments
 		margin-bottom: 2rem 
 	.logo-nova-poshta
-		margin: 3rem 0 2rem
+		margin: 2rem 0
 		display: block
 		+r(768)
 			display: none
 	.logo
-		margin-top: 5.3rem 
-		+r(768)
-			margin-left: -4rem 
+		margin-top: 5rem 
+		// +r(768)
+		margin-left: -4rem 
 	.f-contacts
 		text-align: right
 		&__in
@@ -218,10 +225,15 @@ a
 		&:hover
 			&:after
 				display: none
+
 .payments
 	font-size: 0
 	img
-		margin-right: 10px 		
+		margin-right: 10px 	
+.seo
+	margin-top: 5.5rem
+	p
+		line-height: 1.7 	
 .btn-group
 	font-size: 0
 	.btn
@@ -230,7 +242,7 @@ a
 			margin-left: 0
 .btn
 	display: inline-block
-	padding: 1.6rem 4.5rem
+	padding: 1.7rem 4.5rem
 	text-transform: uppercase
 	text-align: center
 	border-radius: 4px 
@@ -261,7 +273,7 @@ a
 		text-align: center
 .btn-link
 	border: 2px solid
-	padding: 1rem
+	padding: .7rem 1.5rem
 	line-height: 1 
 	color: #000 
 	+msans_300
@@ -302,9 +314,9 @@ a
 		.control-label
 			padding: 13px 0 0 15px
 	.btn_width
-		margin: 4rem 0 
+		margin: 3rem 0
 	.total
-		margin: 2rem 0 3rem
+		margin: 5rem 0 3rem
 .form-group
 	font-size: 1.6rem
 	+msans_500

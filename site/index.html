@@ -49,7 +49,7 @@
 					<img src="img/slide1.jpg" alt="img">
 				</div>
 				<div class="slider__info">
-					<div class="slider__title">Купуйте товари в США</div>
+					<div class="slider__title">Купуйте <div>товари в США</div></div>
 					<p>Ви, Ваші родичі і Ваші друзі, які проживають за межами США, можуть БЕЗКОШТОВНО використовувати нашу адресу в безподатковому штаті для купівлі товарів у США.</p>
 					<a href="#" class="btn-link">Детальніше</a>
 				</div>
@@ -147,16 +147,24 @@
 						</div>
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12 text-right">
-								<label class="radio-inline radio-inline_right">
-									<span>МЕТРИЧНА СИСТЕМА (cm., kg.)</span>
-									<input type="radio" name="optionsRadios" value="option1" checked>
-								</label>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<label class="radio-inline radio-inline_right">
+											<span>МЕТРИЧНА СИСТЕМА (cm., kg.)</span>
+											<input type="radio" name="optionsRadios" value="option1" checked>
+										</label>
+									</div>
+								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 text-left">
-								<label class="radio-inline">
-									<input type="radio" name="optionsRadios" value="option2">
-									<span>АНГЛІЙСЬКА СИСТЕМА (ft., lb.)</span>
-								</label>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<label class="radio-inline">
+											<input type="radio" name="optionsRadios" value="option2">
+											<span>АНГЛІЙСЬКА СИСТЕМА (ft., lb.)</span>
+										</label>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="row">
@@ -266,25 +274,28 @@
 		<div class="container">
 			<div class="box">
 				<form action="#">
-					<div class="form-horizontal">
+					<div class="form-horizontal tracking">
 						<div class="row">
-							<div class="col-lg-8 col-md-8 col-sm-12 col-lg-offset-2 col-md-offset-2">
-								<div class="col-lg-7 col-md-7 col-sm-12">
+							<div class="col-lg-10 col-md-9 col-sm-12 col-lg-offset-1 col-md-offset-1">
+								<div class="col-lg-8 col-md-7 col-sm-12">
 									<div class="form-group form-group-lg">
-									    <label for="inputNumber" class="col-sm-6 control-label">НОМЕР ПОСИЛКИ</label>
+									    <label for="inputNumber" class="col-sm-6 control-label control-label_big">НОМЕР ПОСИЛКИ</label>
 									    <div class="col-sm-6">
 											<input type="text" class="form-control" id="inputNumber" value="29586740684574">
 									    </div>
 									</div>
 								</div>
-								<div class="col-lg-5 col-md-5 col-sm-12">
+								<div class="col-lg-4 col-md-5 col-sm-12">
 									<button class="btn btn_action btn_liquid" type="button">ВІДСТЕЖИТИ</button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="status">
-						<span class="status__arr"></span>
+						<span class="status__arr">
+							СТАТУС
+							<i></i>	
+						</span>
 						<div class="status__text"><strong>1 вересня 2015:</strong> Прибула на склад за адресою 1811 78th Str, Brooklyn NY 11214, USA </div>
 					</div>
 				</form>
@@ -315,10 +326,12 @@
 					</ul>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-					<a href="#" class="logo">
-						<img src="img/logo-white.svg" alt="Nova Poshta Shopping">
-						<strong>Nova Poshta Shopping</strong>
-					</a>
+					<div class="text-center">
+						<a href="#" class="logo">
+							<img src="img/logo-white.svg" alt="Nova Poshta Shopping">
+							<strong>Nova Poshta Shopping</strong>
+						</a>
+					</div>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-lg-offset-1">
 					<a href="#" class="logo-nova-poshta">

@@ -1,6 +1,7 @@
 .slider
 	position: relative
 	overflow: hidden
+	margin: 0 -15px 
 	&__nav
 		position: absolute
 		left: 0
@@ -10,15 +11,15 @@
 	&__info
 		position: relative
 		z-index: 2
-		padding: 2rem 5.8rem 2rem 0 
-		width: 58%
+		padding: 2.7rem 5.8rem 2rem 0 
+		width: 54%
 		float: right
 		+msans_300
 		font-size: 2rem
 		line-height: 1.5
 		min-height: 49rem
 		p
-			margin: 2rem 0 5rem 
+			margin: 1rem 0 2.7rem 
 	&__title
 		width: 85%
 		color: #fff
@@ -50,7 +51,7 @@
 	+clr
 .step
 	position: relative
-	padding: 0 4%
+	padding: 0 3%
 	float: left 
 	text-align: center
 	width: 25%
@@ -67,6 +68,8 @@
 	i
 		margin-bottom: 4rem
 		font-size: 7rem
+	p
+		line-height: 1.6 
 .logo-slider
 	margin-bottom: 5.5rem
 	.slick-list
@@ -87,5 +90,19 @@
 	img
 		margin: 0 auto 
 .status
-	text-align: center		
+	text-align: center	
+	&__arr
+		margin: 3rem 0 3rem 
+		position: relative
+		display: block
+		i
+			display: block
+			margin: 2rem auto 0
+			+s(arrow_bottom)
 
+
+.form-horizontal 
+	.form-group-lg
+		.control-label_big
+			+rm(992)
+				font-size: 2.4rem 	
