@@ -84,6 +84,10 @@ $bg: #f0f0f0
 	-moz-osx-font-smoothing: grayscale
 html
 	font-size: 62.5%
+	+selection
+		background: rgba(#000,.2) 
+	+r(992)
+		font-size: 56%
 body
 	+msans_500
 	font-size: 1.8rem
@@ -99,9 +103,13 @@ a
 	+tr(border .3s)
 	&:hover
 		border-color: transparent 
+.container-fluid
+	max-width: 1200px
 // common blocks
 .header
 	border-top: 4px solid $primary 
+	+r(767)
+		text-align: center
 	.logo
 		margin: 3.3rem 0 0 
 	.btn-group
@@ -116,6 +124,10 @@ a
 	float: right
 	margin: 2rem 0 3.5rem
 	text-align: right
+	+r(767)
+		position: absolute
+		top: 1rem
+		right: 1rem
 	&__item
 		display: inline-block
 		vertical-align: middle
