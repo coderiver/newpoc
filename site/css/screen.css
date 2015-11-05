@@ -622,6 +622,7 @@ a:hover { text-decoration: none; }
 .btn_action:hover { background: #de1219; }
 .btn_action:active { background: #d41118; }
 .btn_width { width: 50rem; text-align: center; }
+.btn_width-small { width: 40rem; text-align: center; }
 
 .btn-link { border: 2px solid; padding: 0.7rem 1.5rem; line-height: 1; color: #000; font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 2.4rem; line-height: 1; }
 
@@ -629,6 +630,8 @@ a:hover { text-decoration: none; }
 
 .box { border: 1px solid #ddd; padding: 5.5rem; border-radius: 5px; }
 
+.form-horizontal_mod .row { margin-bottom: 3rem; }
+.form-horizontal_mod .form-group { margin: 0; }
 .form-horizontal .row { margin-top: 2.3rem; margin-bottom: 2.3rem; }
 .form-horizontal .row:first-child { margin-top: 0; }
 .form-horizontal .row:last-child { margin-bottom: 0; }
@@ -661,6 +664,15 @@ a:hover { text-decoration: none; }
 
 .control-label { font-size: 1.6rem; }
 
+.captcha { text-align: center; font-size: 0; }
+.captcha > span { display: inline-block; padding: 0 1.5rem; vertical-align: middle; }
+.captcha__title { font-size: 1.6rem; margin: 0; vertical-align: middle; }
+.captcha__input { width: 10rem; }
+
+.checkbox-inline, .checkbox { font-size: 1.6rem; }
+.checkbox-inline.is-right label, .checkbox.is-right label { padding: 0 2rem 0 0; }
+.checkbox-inline.is-right input, .checkbox.is-right input { margin: 0; top: 11px; left: auto; right: -2rem; }
+
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -689,6 +701,7 @@ a:hover { text-decoration: none; }
 .section { margin: 3rem 0; }
 .section_start { padding: 3rem 0 4.5rem; background: #f0f0f0; text-align: center; }
 .section_start .title { margin: 0 0 5.5rem; }
+.section_reg { margin-bottom: 7rem; }
 
 .steps-slider { position: relative; *zoom: 1; }
 .steps-slider:after { content: " "; display: table; clear: both; }

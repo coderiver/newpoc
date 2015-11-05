@@ -237,7 +237,6 @@ a
 		&:hover
 			&:after
 				display: none
-
 .payments
 	font-size: 0
 	img
@@ -283,6 +282,9 @@ a
 	&_width
 		width: 50rem
 		text-align: center
+	&_width-small
+		width: 40rem
+		text-align: center
 .btn-link
 	border: 2px solid
 	padding: .7rem 1.5rem
@@ -303,6 +305,11 @@ a
 	padding: 5.5rem 
 	+round
 .form-horizontal
+	&_mod
+		.row
+			margin-bottom: 3rem
+		.form-group
+			margin: 0 
 	.row
 		margin-top: 2.3rem
 		margin-bottom: 2.3rem
@@ -375,3 +382,33 @@ a
 	font-size: 1.2rem
 .control-label
 	font-size: 1.6rem
+	
+.captcha
+	text-align: center
+	font-size: 0
+	> span
+		display: inline-block
+		padding: 0 1.5rem 
+		vertical-align: middle
+	&__title
+		font-size: 1.6rem
+		margin: 0
+		vertical-align: middle
+	&__input
+		width: 10rem
+
+.checkbox-inline,
+.checkbox
+	font-size: 1.6rem
+	&.is-right
+		label
+			padding: 0 2rem 0 0
+		input
+			margin: 0
+			top: 11px
+			left: auto
+			right: -2rem
+
+
+
+
