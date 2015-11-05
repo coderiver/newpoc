@@ -115,6 +115,13 @@ a
 	.btn-group
 		clear: both
 		text-align: right
+		+r(767)
+			.btn
+				display: block
+				margin: 2rem auto
+				width: 20rem 
+				padding-left: 0
+				padding-right: 0 
 	&_registered
 		border-top: 0
 .logo
@@ -129,6 +136,7 @@ a
 	+r(767)
 		position: absolute
 		top: 1rem
+		// top: -14rem
 		right: 1rem
 	&__item
 		display: inline-block
@@ -150,6 +158,10 @@ a
 .nav
 	margin: 3.3rem 0 3rem
 	font-size: 0
+	+r(767)
+		margin-left: auto 
+		margin-right: auto 
+		display: inline-block
 	&__item
 		display: inline-block
 		vertical-align: middle
@@ -160,6 +172,11 @@ a
 		&:hover
 			.nav__link
 				color: $primary 
+		+r(767)
+			display: block
+			margin-left: 0
+			text-align: left
+			margin-bottom: 1.3rem 
 	&__link
 		display: block
 		color: $text
@@ -168,7 +185,7 @@ a
 	background-color: $primary
 	&__in
 		padding: 2.5rem 0 2rem
-		+r(768)
+		+r(767)
 			text-align: center
 	&__nav
 		li
@@ -191,7 +208,7 @@ a
 				&:hover
 					&:after
 						display: none
-		+r(768)
+		+r(767)
 			display: inline-block
 			text-align: left
 	&__meta
@@ -206,11 +223,10 @@ a
 	.logo-nova-poshta
 		margin: 2rem 0
 		display: block
-		+r(768)
+		+r(767)
 			display: none
 	.logo
 		margin-top: 5rem 
-		// +r(768)
 		margin-left: -4rem 
 	.f-contacts
 		text-align: right
@@ -253,6 +269,7 @@ a
 		margin-left: 4rem
 		&:first-child
 			margin-left: 0
+		
 .btn
 	display: inline-block
 	padding: 1.7rem 4.5rem
@@ -293,9 +310,13 @@ a
 	&_width
 		width: 50rem
 		text-align: center
+		+r(767)
+			width: 100%
 	&_width-small
 		width: 40rem
 		text-align: center
+		+r(767)
+			width: 100%
 	&_width-xs
 		width: 26rem
 		text-align: center 

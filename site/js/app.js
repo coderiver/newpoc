@@ -50,10 +50,36 @@ $(document).ready(function() {
 	logoSlider.slick(logoSliderOpt);
 
 	$("[data-slick]").slick();
-
+	// js-steps-slider
+	var stepsSlider 	= $(".js-steps-slider");
+	var stepsSliderOpt	= {
+		responsive: [
+			{
+				breakpoint: 9999,
+				settings: 'unslick'
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	}
+	// var runSlick = function() {
+		stepsSlider.slick(stepsSliderOpt);
+	// }
+	// runSlick();
+	// $(window).on('resize', function(){
+	// 	var width = $(window).width();
+	// 	if(width < 767) {
+	// 		runSlick();
+	// 	}
+	// });
 	// popup
 	$('.js-show-popup').on('click', function (event) {
-		var $popup = $('.' + $(this).data('popup'));
+		var $popup 	= $('.' + $(this).data('popup'));
 		$('.js-popup').fadeOut();
 		$popup.addClass('is-active').fadeIn()
 		$('body').addClass('no-scroll');
