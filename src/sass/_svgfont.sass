@@ -5,14 +5,15 @@
 	font-weight: normal
 	font-style: normal
 
-$icon-exit: "\EA01"
-$icon-sepa: "\EA02"
-$icon-skrill: "\EA03"
-$icon-step1: "\EA04"
-$icon-step2: "\EA05"
-$icon-step3: "\EA06"
-$icon-step4: "\EA07"
-$icon-user: "\EA08"
+$icon-close: "\EA01"
+$icon-exit: "\EA02"
+$icon-sepa: "\EA03"
+$icon-skrill: "\EA04"
+$icon-step1: "\EA05"
+$icon-step2: "\EA06"
+$icon-step3: "\EA07"
+$icon-step4: "\EA08"
+$icon-user: "\EA09"
 
 
 %icon
@@ -29,6 +30,8 @@ $icon-user: "\EA08"
 	@extend %icon
 	display: inline-block
 
+.icon-close:before
+	content: $icon-close
 .icon-exit:before
 	content: $icon-exit
 .icon-sepa:before
@@ -44,5 +47,4 @@ $icon-user: "\EA08"
 .icon-step4:before
 	content: $icon-step4
 .icon-user:before
-	content: $icon-user
-	
+	content: $icon-user

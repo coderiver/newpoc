@@ -296,6 +296,9 @@ a
 	&_width-small
 		width: 40rem
 		text-align: center
+	&_width-xs
+		width: 26rem
+		text-align: center 
 .btn-link
 	border: 2px solid
 	padding: .7rem 1.5rem
@@ -425,6 +428,54 @@ a
 			top: 11px
 			left: auto
 			right: -2rem
+.popup
+	display: none
+	position: fixed
+	left: 0
+	right: 0
+	top: 0 
+	bottom: 0
+	background-color: rgba(0, 0, 0, 0.25)
+	z-index: 11
+	overflow-y: auto
+	overflow-x: hidden
+	+vertical
+	&__main
+		display: inline-block
+		vertical-align: middle
+		padding: 3rem 7rem 4rem 
+		font-size: 1.8rem 
+		width: 840px 
+		background: #fff 
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.4)
+		position: relative
+		.title
+			margin: 1rem 0 4rem
+		+r(860)
+			width: auto
+			max-width: 840px 
+	&__close
+		position: absolute
+		top: 2.5rem
+		right: 2.5rem
+		background: none
+		font-size: 4rem
+		color: #000
+		opacity: .4
+		+tr(opacity .25s)
+		&:hover
+			opacity: 1
+			
+.feedback-form
+	&__submit
+		margin-top: 6rem
+	.control-label
+		padding-right: 15px 
+	textarea
+		resize: vertical
+
+
+
 
 
 

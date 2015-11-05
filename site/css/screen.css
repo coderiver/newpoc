@@ -626,6 +626,7 @@ a:hover { text-decoration: none; }
 .btn_white { background: #fff; color: #ed1c24; box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); font-size: 1.6rem; }
 .btn_width { width: 50rem; text-align: center; }
 .btn_width-small { width: 40rem; text-align: center; }
+.btn_width-xs { width: 26rem; text-align: center; }
 
 .btn-link { border: 2px solid; padding: 0.7rem 1.5rem; line-height: 1; color: #000; font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 2.4rem; line-height: 1; }
 
@@ -679,26 +680,39 @@ a:hover { text-decoration: none; }
 .checkbox-inline.is-right label, .checkbox.is-right label { padding: 0 2rem 0 0; }
 .checkbox-inline.is-right input, .checkbox.is-right input { margin: 0; top: 11px; left: auto; right: -2rem; }
 
+.popup { display: none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.25); z-index: 11; overflow-y: auto; overflow-x: hidden; text-align: center; font-size: 0; }
+.popup:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.popup__main { display: inline-block; vertical-align: middle; padding: 3rem 7rem 4rem; font-size: 1.8rem; width: 840px; background: #fff; box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); position: relative; }
+.popup__main .title { margin: 1rem 0 4rem; }
+.popup__close { position: absolute; top: 2.5rem; right: 2.5rem; background: none; font-size: 4rem; color: #000; opacity: 0.4; transition: opacity 0.25s; }
+.popup__close:hover { opacity: 1; }
+
+.feedback-form__submit { margin-top: 6rem; }
+.feedback-form .control-label { padding-right: 15px; }
+.feedback-form textarea { resize: vertical; }
+
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 .icon, [class^="icon-"], [class*=" icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .icon, [class^="icon-"], [class*=" icon-"] { display: inline-block; }
 
-.icon-exit:before { content: ""; }
+.icon-close:before { content: ""; }
 
-.icon-sepa:before { content: ""; }
+.icon-exit:before { content: ""; }
 
-.icon-skrill:before { content: ""; }
+.icon-sepa:before { content: ""; }
 
-.icon-step1:before { content: ""; }
+.icon-skrill:before { content: ""; }
 
-.icon-step2:before { content: ""; }
+.icon-step1:before { content: ""; }
 
-.icon-step3:before { content: ""; }
+.icon-step2:before { content: ""; }
 
-.icon-step4:before { content: ""; }
+.icon-step3:before { content: ""; }
 
-.icon-user:before { content: ""; }
+.icon-step4:before { content: ""; }
+
+.icon-user:before { content: ""; }
 
 .slider { position: relative; overflow: hidden; margin: 0 -15px; }
 .slider__nav { position: absolute; left: 0; right: 0; top: 0; }
@@ -788,6 +802,8 @@ a:hover { text-decoration: none; }
 .find .form-group label { margin-bottom: 1.5rem; font-size: 1.8rem; }
 .find .form-group .form-control { font-size: 1.8rem; }
 .find__item { padding-bottom: 2.5rem; }
+
+.no-scroll { overflow: hidden; -webkit-overflow-scrolling: auto; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -1075,6 +1091,8 @@ a:hover { text-decoration: none; }
  .footer__in{ text-align: center; }
  .footer__nav{ display: inline-block; text-align: left; }
  .footer .logo-nova-poshta{ display: none; } }
+@media only screen and (max-width: 860px){
+ .popup__main{ width: auto; max-width: 840px; } }
 @media only screen and (min-width: 992px){
  .form-horizontal .form-group-lg .control-label_big{ font-size: 2.4rem; } }
 

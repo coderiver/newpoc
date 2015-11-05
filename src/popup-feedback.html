@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>popup-feedback</title>
+	//= partials/head.html
+</head>
+<body class="no-scroll">
+<!-- BEGIN  out-->
+<div class="out">
+	//= partials/header.html
+	<div class="container-fluid">
+		<div class="slider hidden-xs" data-slick='{"dots": true}'>
+			<div>
+				<div class="slider__img">
+					<img src="img/slide1.jpg" alt="img">
+				</div>
+				<div class="slider__info">
+					<div class="slider__title">Купуйте <div>товари в США</div></div>
+					<p>Ви, Ваші родичі і Ваші друзі, які проживають за межами США, можуть БЕЗКОШТОВНО використовувати нашу адресу в безподатковому штаті для купівлі товарів у США.</p>
+					<a href="#" class="btn-link">Детальніше</a>
+				</div>
+			</div>
+			<div>
+				<div class="slider__img">
+					<img src="img/slide1.jpg" alt="img">
+				</div>
+				<div class="slider__info">
+					<div class="slider__title">Купуйте товари в США</div>
+					<p>Ви, Ваші родичі і Ваші друзі, які проживають за межами США, можуть БЕЗКОШТОВНО використовувати нашу адресу в безподатковому штаті для купівлі товарів у США.</p>
+					<a href="#" class="btn-link">Детальніше</a>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="title">Як це працює?</div>
+			<div class="steps-slider js-steps-slider">
+				<div class="step">
+					<i class="icon-step1"></i>
+					<p>Реєструєтесь на сайті NovaPoshta Shopping</p>
+				</div>
+				<div class="step">
+					<i class="icon-step2"></i>
+					<p>Обираєте вподобані інтернет-магазини для покупок</p>
+				</div>
+				<div class="step">
+					<i class="icon-step3"></i>
+					<p>Робите всі замовлення на нашу адресу в США</p>
+				</div>
+				<div class="step">
+					<i class="icon-step4"></i>
+					<p>Групуйте замовлення у посилки та відправляйте собі</p>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="title">Розрахунок вартості</div>
+			<div class="box">
+				<form action="#">
+					<div class="form-horizontal">
+						<div class="row">
+							<div class="col-md-6 col-sm-12 text-right">
+								<div class="form-group">
+								    <label for="selectCountry" class="col-sm-4 control-label">КРАЇНА  ОТРИМАННЯ</label>
+								    <div class="col-sm-8">
+										<select class="form-control" id="selectCountry">
+											<option value="Україна">Україна</option>
+											<option value="Україна">Україна</option>
+											<option value="Україна">Україна</option>
+											<option value="Україна">Україна</option>
+											<option value="Україна">Україна</option>
+										</select>
+								    </div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12 text-left">
+								<div class="form-group">
+								    <label for="selectCity" class="col-sm-4 control-label">МІСТО ОТРИМАННЯ</label>
+								    <div class="col-sm-8">
+										<select class="form-control" id="selectCity">
+											<option value="Корсунь-Шевченківський">Корсунь-Шевченківський</option>
+											<option value="Корсунь-Шевченківський">Корсунь-Шевченківський</option>
+											<option value="Корсунь-Шевченківський">Корсунь-Шевченківський</option>
+											<option value="Корсунь-Шевченківський">Корсунь-Шевченківський</option>
+											<option value="Корсунь-Шевченківський">Корсунь-Шевченківський</option>
+										</select>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-12 text-right">
+								<div class="form-group">
+								    <label for="selectService" class="col-sm-4 control-label">ТИП ПОСЛУГИ</label>
+								    <div class="col-sm-8">
+										<select class="form-control" id="selectService">
+											<option value="На відділення «Нова Пошта»">На відділення «Нова Пошта»</option>
+											<option value="На відділення «Нова Пошта»">На відділення «Нова Пошта»</option>
+										</select>
+								    </div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12 text-left">
+								<div class="form-group">
+								    <label for="selectOffice" class="col-sm-4 control-label">НОМЕР ВІДДІЛЕННЯ</label>
+								    <div class="col-sm-8">
+										<select class="form-control" id="selectOffice">
+											<option value="Відділення 92">Відділення 92</option>
+											<option value="Відділення 92">Відділення 92</option>
+										</select>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-12 text-right">
+								<div class="form-group">
+									<div class="col-xs-12">
+										<label class="radio-inline radio-inline_right">
+											<span>МЕТРИЧНА СИСТЕМА (cm., kg.)</span>
+											<input type="radio" name="optionsRadios" value="option1" checked>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12 text-left">
+								<div class="form-group">
+									<div class="col-xs-12">
+										<label class="radio-inline">
+											<input type="radio" name="optionsRadios" value="option2">
+											<span>АНГЛІЙСЬКА СИСТЕМА (ft., lb.)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="form-group">
+								    <label for="inputWeight" class="col-sm-6 control-label">ВАГА</label>
+								    <div class="col-sm-6">
+										<div class="input-group">
+											<input type="text" class="form-control" id="inputWeight" value="100">
+										    <div class="input-group-addon">кг.</div>
+										</div>
+								    </div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="form-group">
+								    <label for="inputLength" class="col-sm-6 control-label">ДОВЖИНА</label>
+								    <div class="col-sm-6">
+										<div class="input-group">
+										    <input type="text" class="form-control" id="inputLength" value="100">
+										    <div class="input-group-addon">см.</div>
+										</div>
+								    </div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="form-group">
+								    <label for="inputHeight" class="col-sm-6 control-label">ВИСОТА</label>
+								    <div class="col-sm-6">
+										<div class="input-group">
+											<input type="text" class="form-control" id="inputHeight" value="100">
+										    <div class="input-group-addon">см.</div>
+										</div>
+								    </div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="form-group">
+								    <label for="inputWidth" class="col-sm-6 control-label">ШИРИНА</label>
+								    <div class="col-sm-6">
+										<div class="input-group">
+											<input type="text" class="form-control" id="inputWidth" value="100">
+										    <div class="input-group-addon">см.</div>
+										</div>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<div class="total">ПРИБЛИЗНА ВАРТІСТЬ ДОСТАВКИ: 243 грн.*</div>
+							<button type="submit" class="btn btn_action btn_width">РОЗРАХУВАТИ</button>
+							<div class="meta-text">*Ціна перераховується по курсу на день оплати</div>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="section">
+			<div class="title">Купуйте у провідних інтернет-магазинах США</div>
+			<div class="logo-slider js-logo-slider">
+				<div>
+					<a href="#"><img src="img/ebay.png" alt="ebay"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/amazon.png" alt="amazon"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/zappos.png" alt="zappos"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/apple.png" alt="apple"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/6pm.png" alt="6pm"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/ebay.png" alt="ebay"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/amazon.png" alt="amazon"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/zappos.png" alt="zappos"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/apple.png" alt="apple"></a>
+				</div>
+				<div>
+					<a href="#"><img src="img/6pm.png" alt="6pm"></a>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="#" class="link">Більше магазинів</a>
+			</div>
+		</div>
+	</div>
+	<div class="section section_start">
+		<div class="container-fluid">
+			<div class="title">Готовий до шопінгу в США?</div>
+			<a href="#" class="btn btn_action btn_width">РОЗПОЧАТИ ЗАРАЗ!</a>
+		</div>
+		
+	</div>
+	<div class="section">
+		<div class="title">Відстежити свою посилку</div>
+		<div class="container-fluid">
+			<div class="box">
+				<form action="#">
+					<div class="form-horizontal tracking">
+						<div class="row">
+							<div class="col-lg-10 col-md-9 col-sm-12 col-lg-offset-1 col-md-offset-1">
+								<div class="col-lg-8 col-md-7 col-sm-12">
+									<div class="form-group form-group-lg">
+									    <label for="inputNumber" class="col-sm-6 control-label control-label_big">НОМЕР ПОСИЛКИ</label>
+									    <div class="col-sm-6">
+											<input type="text" class="form-control" id="inputNumber" value="29586740684574">
+									    </div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5 col-sm-12">
+									<button class="btn btn_action btn_liquid" type="button">ВІДСТЕЖИТИ</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="status">
+						<span class="status__arr">
+							СТАТУС
+							<i></i>	
+						</span>
+						<div class="status__text"><strong>1 вересня 2015:</strong> Прибула на склад за адресою 1811 78th Str, Brooklyn NY 11214, USA </div>
+					</div>
+				</form>
+				
+			</div>
+			<div class="seo">
+				<p>Міжнародні перевезення з «Нова Пошта»</p>
+				<p>«Нова Пошта» займається перевезенням усіх видів вантажів які дозволені на території Украйни. Компанія давно працює на європейському та українському ринку. Ми маємо об’ємний досвід у цій сфері та виконуємо вантажні перевезення за кордон на будь-яку відстань та до будь-якої країни. Головні способи доставки, які ми використовуємо під час перевезень: автомобільні перевезення, авіа доставка, перевезення через річні та морські шляхи. «Нова Пошта» співпрацює з найкрупнішими транспортними компаніями України та Європи. Це дає можливість пропонувати клієнтам найвигідніші тарифи на послуги по перевезенню вантажів. При цьому зовсім не має значення, який розмір чи вага вантажу. Ми доставимо товар згідно умов контракту в найкоротший час.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END out-->
+<a href="#" class="js-show-popup" data-popup="js-popup-feedback" style="position: fixed; top: 0; left: 0; diplsay:block; background: white; border: 1px solid #333; font-size: 1.4rem; padding: 5px">popup-feedback</a> 
+<div class="popup js-popup js-popup-feedback" style="display: block">
+	<div class="popup__main js-popup-in">
+		<div class="title">Форма зворотнього зв’язку</div>
+		<button type="button"  class="popup__close js-close-popup"><i class="icon-close"></i></button>
+		<form action="#">
+			<div class="form-horizontal feedback-form">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputName" class="control-label">ВАШЕ ІМ’Я</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="inputName" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputPhone" class="control-label">ТЕЛЕФОН</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="tel" class="form-control" id="inputPhone" placeholder="+380" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputMail" class="control-label">E-MAIL</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="email" class="form-control" id="inputMail" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputText" class="control-label">ПИТАННЯ</label>
+						</div>
+						<div class="col-sm-5">
+							<textarea class="form-control" rows="8"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<button class="btn btn_action btn_width-xs feedback-form__submit" type="submit">ВІДПРАВИТИ</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+//= partials/footer.html
+//= partials/scripts.html
+</body>
+</html>
