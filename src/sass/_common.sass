@@ -115,6 +115,8 @@ a
 	.btn-group
 		clear: both
 		text-align: right
+	&_registered
+		border-top: 0
 .logo
 	display: inline-block
 	+hide-text
@@ -279,6 +281,15 @@ a
 			background: darken($primary, 5%)
 		&:active
 			background: darken($primary, 7%)
+	&_small
+		padding: .7rem 1.8rem
+		text-transform: none
+		
+	&_white
+		background: #fff
+		color: $primary
+		box-shadow:  0 2px 0 rgba(0, 0, 0, 0.2)
+		font-size: 1.6rem 
 	&_width
 		width: 50rem
 		text-align: center
@@ -293,6 +304,10 @@ a
 	+msans_300
 	font-size: 2.4rem
 	line-height: 1
+.link-out
+	color: #fff
+	font-size: 2rem
+	  
 .title
 	margin: 6rem 0 6rem
 	color: $primary
@@ -300,6 +315,8 @@ a
 	font-size: 3.2rem
 	+m_500
 	text-align: center
+	&_left
+		text-align: left
 .box
 	border: 1px solid $border
 	padding: 5.5rem 

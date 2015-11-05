@@ -49,3 +49,109 @@
 	&__text
 		padding-right: 10px 
 		line-height: 1.4
+		
+.cabinet
+	background: $primary
+	padding: 1.3rem 0
+	&__item
+		position: relative
+		+vertical
+		text-align: left
+		font-size: 1.8rem
+		height: 5rem  
+		&:after
+			content: ''
+			position: absolute
+			right: -15px
+			top: 0
+			height: 50px 
+			width: 1px
+			background: #fff 
+		&-in
+			display: inline-block
+			vertical-align: middle 
+	.row
+		> div:last-child
+			> div:last-child
+				.cabinet__item
+					&:after
+						display: none
+	.header-help
+		margin-left: -15px 
+	.logout
+		margin-left: 15px 
+.user
+	&__name
+		color: #fff
+		display: block
+		i, span
+			vertical-align: middle
+			display: inline-block
+		i
+			margin-right: 5px 
+	&__info
+		margin-top: .5rem 
+		margin-bottom: 0
+		li
+			display: inline-block
+			margin-right: 1rem 
+			a
+				font-size: 1.4rem 
+				color: #fff
+.balance
+	&__number
+		color: #fff
+		display: inline-block
+		margin-right: 1.5rem
+.header-help
+	a
+		display: block
+		color: #fff
+		font-size: 1.4rem
+		margin-bottom: 1rem
+		&:last-child
+			margin-bottom: 0
+.logout
+	i
+		display: inline-block
+		vertical-align: middle
+		margin-left: 1rem
+		font-size: 1.8rem  
+.service
+	&__list
+		li
+			position: relative
+			color: #bcc6d4
+			list-style-type: disc
+			margin: 1.5rem 0 1.5rem 2rem 
+			&:first-child
+				margin-top: 0
+			a
+				color: #000
+				font-size: 1.4rem 
+				span
+					color: #bcc6d4
+				&:hover
+					color: $primary
+	&__header
+		font-size: 1.8rem
+		color: $primary
+		+msans_700 
+		& + .service__list
+			li
+				&:first-child
+					margin-top: 1.5rem 
+.find
+	border-top: 1px solid #ddd
+	& > .row
+		& > div:first-child
+			border-right: 1px solid #ddd
+	.form-group
+		margin-top: 2rem 
+		label
+			margin-bottom: 1.5rem 
+			font-size: 1.8rem 
+		.form-control
+			font-size: 1.8rem 
+	&__item
+		padding-bottom: 2.5rem
