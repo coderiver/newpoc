@@ -567,9 +567,11 @@ a:hover { text-decoration: none; }
 .header { border-top: 4px solid #ed1c24; }
 .header .logo { margin: 3.3rem 0 0; }
 .header .btn-group { clear: both; text-align: right; }
+.header .btn-group .btn { margin: 2rem; }
 .header_registered { border-top: 0; }
 
-.logo { display: inline-block; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+.logo { display: inline-block; max-width: 100%; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+.logo img { max-width: 100%; }
 
 .logo-nova-poshta { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
 
@@ -582,7 +584,7 @@ a:hover { text-decoration: none; }
 .nav { margin: 3.3rem 0 3rem; font-size: 0; }
 .nav__item { display: inline-block; vertical-align: middle; margin-left: 4%; font-size: 1.8rem; }
 .nav__item:first-child { margin-left: 0; }
-.nav__item:hover .nav__link { color: #ed1c24; }
+.nav__item:hover .nav__link, .nav__item.is-active .nav__link { color: #ed1c24; }
 .nav__link { display: block; color: #333; transition: color 0.3s; }
 
 .footer { background-color: #ed1c24; }
@@ -647,7 +649,7 @@ a:hover { text-decoration: none; }
 .form-horizontal .text-right .control-label { text-align: right; }
 .form-horizontal .text-right .radio-inline { padding-right: 0; }
 .form-horizontal .control-label { font-weight: normal; }
-.form-horizontal .form-group .control-label { padding: 13px 0 0 15px; }
+.form-horizontal .control-label .control-label { padding: 13px 0 0 15px; }
 .form-horizontal .btn_width { margin: 3rem 0; }
 .form-horizontal .total { margin: 5rem 0 3rem; }
 
@@ -716,7 +718,7 @@ a:hover { text-decoration: none; }
 
 .slider { position: relative; overflow: hidden; margin: 0 -15px; }
 .slider__nav { position: absolute; left: 0; right: 0; top: 0; }
-.slider__info { position: relative; z-index: 2; padding: 2.7rem 5.8rem 2rem 0; width: 54%; float: right; font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 2rem; line-height: 1.5; min-height: 49rem; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.slider__info { position: relative; z-index: 2; padding: 2.7rem 5.8rem 8rem 0; width: 54%; float: right; font-family: "museosanscyrl_300", Arial, Helvetica, sans-serif; font-size: 2rem; line-height: 1.5; min-height: 49rem; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 .slider__info p { margin: 1rem 0 2.7rem; }
 .slider__title { width: 85%; color: #fff; font-family: "museocyrl_500", Arial, Helvetica, sans-serif; font-size: 6rem; line-height: 1.2; }
 .slider__img { position: absolute; left: 0; top: 0; right: 0; }
@@ -831,6 +833,7 @@ a:hover { text-decoration: none; }
 
 .slick-prev, .slick-next { position: absolute; z-index: 3; top: 0; bottom: 0; width: 5rem; text-align: center; background: none; font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
 .slick-prev:after, .slick-next:after { display: inline-block; vertical-align: middle; width: 34px; height: 93px; content: ""; }
+.slick-prev.slick-disabled, .slick-next.slick-disabled { display: none !important; }
 
 .slick-prev { left: 2rem; }
 .slick-prev:after { background-image: url("../img/icons.png"); width: 38px; height: 96px; background-position: -84px 0px; }
@@ -1085,21 +1088,53 @@ a:hover { text-decoration: none; }
  .visible-print-inline-block{ display: inline-block !important; }
  .hidden-print{ display: none !important; } }
 @media only screen and (max-width: 992px){
- html{ font-size: 56%; } }
+ html{ font-size: 56%; }
+ .form-horizontal .text-left .control-label{ text-align: right; }
+ .input-group-addon{ height: 40px; }
+ .form-control{ height: 40px; } }
 @media only screen and (max-width: 767px){
  .header{ text-align: center; }
- .header .btn-group .btn{ display: block; margin: 2rem auto; width: 20rem; padding-left: 0; padding-right: 0; }
- .lang{ position: absolute; top: 1rem; right: 1rem; }
- .nav{ margin-left: auto; margin-right: auto; display: inline-block; }
- .nav__item{ display: block; margin-left: 0; text-align: left; margin-bottom: 1.3rem; }
+ .header .btn-group{ text-align: center; }
+ .lang{ position: absolute; top: -13rem; right: 1rem; font-size: 1.5rem; }
+ .nav__item{ font-size: 1.5rem; }
  .footer__in{ text-align: center; }
  .footer__nav{ display: inline-block; text-align: left; }
  .footer .logo-nova-poshta{ display: none; }
  .btn_width{ width: 100%; }
  .btn_width-small{ width: 100%; }
- .step:after{ display: none; } }
+ .form-horizontal_mod .row{ margin-bottom: 0; }
+ .form-horizontal .row{ margin-top: 0; margin-bottom: 0; }
+ .form-horizontal .text-left .radio-inline{ padding-left: 20px; }
+ .form-horizontal .text-right{ text-align: left; }
+ .form-horizontal .text-right .control-label{ text-align: left; }
+ .form-group{ text-align: center; margin-bottom: 3rem; }
+ .parameters .form-group{ text-align: right; }
+ .parameters .control-label{ padding-top: 12px; }
+ .radio-inline input[type="radio"]{ position: absolute; top: 7px; left: 0; margin: 0; }
+ .step{ padding: 0 5%; }
+ .step:after{ display: none; }
+ .tracking{ text-align: center; } }
+@media only screen and (max-width: 480px){
+ .header .btn-group .btn{ display: block; margin: 2rem auto; width: 20rem; padding-left: 0; padding-right: 0; }
+ .nav{ margin-left: auto; margin-right: auto; display: inline-block; }
+ .nav__item{ display: block; margin-left: 0; text-align: left; margin-bottom: 1.3rem; }
+ .footer__nav li{ display: block !important; }
+ .title{ margin: 3rem 0; }
+ .box{ border: 0; padding: 0 2rem; } }
+@media only screen and (max-width: 600px){
+ .footer__nav li{ display: inline-block; vertical-align: middle; margin: 0.7rem; }
+ .footer .logo{ margin-top: 2rem; }
+ .footer .row > div{ float: none; width: 100%; } }
+@media only screen and (max-width: 360px){
+ .seo{ font-size: 1.6rem; }
+ .title{ font-size: 2.5rem; }
+ .total{ font-size: 2rem; } }
 @media only screen and (max-width: 860px){
  .popup__main{ width: auto; max-width: 840px; } }
+@media only screen and (max-width: 1100px){
+ .slider__title{ font-size: 4.5rem; width: 100%; } }
+@media only screen and (max-width: 1023px){
+ .slider .btn-link{ color: #fff; } }
 @media only screen and (min-width: 992px){
  .form-horizontal .form-group-lg .control-label_big{ font-size: 2.4rem; } }
 

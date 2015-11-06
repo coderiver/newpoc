@@ -28,8 +28,8 @@ $(document).ready(function() {
 
 	$("[data-slick]").slick();
 	// js-steps-slider
-	var stepsSlider 	= $(".js-steps-slider");
-	var stepsSliderOpt	= {
+	var stepsSlider = $(".js-steps-slider");
+	var stepsSliderOpt = {
 		responsive: [
 			{
 				breakpoint: 9999,
@@ -38,6 +38,7 @@ $(document).ready(function() {
 			{
 				breakpoint: 767,
 				settings: {
+					infinite: false,
 					slidesToShow: 1,
 					slidesToScroll: 1
 				}

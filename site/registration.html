@@ -5,7 +5,7 @@
 	<title>reg</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<meta name="theme-color" content="#fff">
+	<meta name="theme-color" content="#ed1c24">
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -17,7 +17,7 @@
 			<div class="row">
 				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 					<a href="#" class="logo">
-						<img src="img/logo.png" alt="Nova Poshta Shopping">
+						<img src="img/logo.png" width="243" alt="Nova Poshta Shopping">
 						<strong>Nova Poshta Shopping</strong>
 					</a>
 				</div>
@@ -35,7 +35,7 @@
 					<ul class="nav">
 						<li class="nav__item"><a class="nav__link" href="#">ПОСЛУГИ ТА ЦІНИ </a></li>
 						<li class="nav__item"><a class="nav__link" href="#">ЯК ЦЕ ПРАЦЮЄ</a></li>
-						<li class="nav__item"><a class="nav__link" href="#">КАТАЛОГ МАГАЗИНІВ</a></li>
+						<li class="nav__item is-active"><a class="nav__link" href="#">КАТАЛОГ МАГАЗИНІВ</a></li>
 						<li class="nav__item"><a class="nav__link" href="#">FAQ</a></li>                
 					</ul>
 				</div>
@@ -184,11 +184,58 @@
 	</div>
 </div>
 <!-- END out-->
+<div class="popup js-popup js-popup-feedback">
+	<div class="popup__main js-popup-in">
+		<div class="title">Форма зворотнього зв’язку</div>
+		<button type="button"  class="popup__close js-close-popup"><i class="icon-close"></i></button>
+		<form action="#">
+			<div class="form-horizontal feedback-form">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputName" class="control-label">ВАШЕ ІМ’Я</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="inputName" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputPhone" class="control-label">ТЕЛЕФОН</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="tel" class="form-control" id="inputPhone" placeholder="+380" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputMail" class="control-label">E-MAIL</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="email" class="form-control" id="inputMail" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputText" class="control-label">ПИТАННЯ</label>
+						</div>
+						<div class="col-sm-5">
+							<textarea class="form-control" rows="8"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<button class="btn btn_action btn_width-xs feedback-form__submit" type="submit">ВІДПРАВИТИ</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 <div class="footer">
 	<div class="footer__in">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-4">
 					<div class="payments">
 						<img src="img/pay-visa.svg" alt="visa">
 						<img src="img/pay-mc.svg" alt="mastercard">
@@ -200,7 +247,7 @@
 						<li><a href="#">FAQ</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-4">
 					<div class="text-center">
 						<a href="#" class="logo">
 							<img src="img/logo-white.svg" alt="Nova Poshta Shopping">
@@ -208,14 +255,14 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-lg-offset-1">
+				<div class="col-lg-3 col-md-4 col-sm-12 col-xs-4 col-lg-offset-1">
 					<a href="#" class="logo-nova-poshta">
 						<img src="img/logo-nova-poshta.svg" alt="Nova Poshta">
 						<strong>Нова пошта</strong>
 					</a>
 					<ul class="feedback">
 						<li>0800 500 00 55</li>
-						<li><a href="#">Зв’язатись з нами</a></li>
+						<li><a href="#" class="js-show-popup" data-popup="js-popup-feedback">Зв’язатись з нами</a></li>
 					</ul>
 				</div>
 			</div>
