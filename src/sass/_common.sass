@@ -417,6 +417,7 @@ a
 			padding-right: 0
 	.control-label
 		font-weight: normal
+		padding-top: 13px
 		.control-label
 			padding: 13px 0 0 15px
 	.btn_width
@@ -495,6 +496,10 @@ a
 .captcha
 	text-align: center
 	font-size: 0
+	label
+		+r(767)
+			display: block
+			margin-bottom: 1rem
 	> span
 		display: inline-block
 		padding: 0 1.5rem 
@@ -552,9 +557,13 @@ a
 		color: #000
 		opacity: .4
 		+tr(opacity .25s)
+		+r(767)
+			font-size: 3rem
 		&:hover
 			opacity: 1
-			
+	.title
+		+r(767)
+			font-size: 2.8rem
 .feedback-form
 	&__submit
 		margin-top: 6rem
