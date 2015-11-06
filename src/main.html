@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>popup-feedback</title>
+	<title>index</title>
 	//= partials/head.html
 </head>
-<body class="no-scroll">
+<body>
 <!-- BEGIN  out-->
 <div class="out">
 	//= partials/header.html
@@ -59,7 +59,7 @@
 				<form action="#">
 					<div class="form-horizontal">
 						<div class="row">
-							<div class="col-md-6 col-sm-12 text-right">
+							<div class="col-sm-6 text-right">
 								<div class="form-group">
 								    <label for="selectCountry" class="col-sm-4 control-label">КРАЇНА  ОТРИМАННЯ</label>
 								    <div class="col-sm-8">
@@ -73,7 +73,7 @@
 								    </div>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-12 text-left">
+							<div class="col-sm-6 text-left">
 								<div class="form-group">
 								    <label for="selectCity" class="col-sm-4 control-label">МІСТО ОТРИМАННЯ</label>
 								    <div class="col-sm-8">
@@ -89,7 +89,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6 col-sm-12 text-right">
+							<div class="col-sm-6 text-right">
 								<div class="form-group">
 								    <label for="selectService" class="col-sm-4 control-label">ТИП ПОСЛУГИ</label>
 								    <div class="col-sm-8">
@@ -100,7 +100,7 @@
 								    </div>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-12 text-left">
+							<div class="col-sm-6 text-left">
 								<div class="form-group">
 								    <label for="selectOffice" class="col-sm-4 control-label">НОМЕР ВІДДІЛЕННЯ</label>
 								    <div class="col-sm-8">
@@ -113,7 +113,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6 col-sm-12 text-right">
+							<div class="col-sm-6 text-right">
 								<div class="form-group">
 									<div class="col-xs-12">
 										<label class="radio-inline radio-inline_right">
@@ -123,7 +123,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-12 text-left">
+							<div class="col-sm-6 text-left">
 								<div class="form-group">
 									<div class="col-xs-12">
 										<label class="radio-inline">
@@ -134,11 +134,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row parameters">
 							<div class="col-md-3 col-sm-6 col-xs-12">
 								<div class="form-group">
-								    <label for="inputWeight" class="col-sm-6 control-label">ВАГА</label>
-								    <div class="col-sm-6">
+								    <label for="inputWeight" class="col-sm-5 col-xs-5 col-xs-control-label">ВАГА</label>
+								    <div class="col-sm-7 col-xs-5">
 										<div class="input-group">
 											<input type="text" class="form-control" id="inputWeight" value="100">
 										    <div class="input-group-addon">кг.</div>
@@ -148,8 +148,8 @@
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12">
 								<div class="form-group">
-								    <label for="inputLength" class="col-sm-6 control-label">ДОВЖИНА</label>
-								    <div class="col-sm-6">
+								    <label for="inputLength" class="col-sm-5 col-xs-5 control-label">ДОВЖИНА</label>
+								    <div class="col-sm-7 col-xs-5">
 										<div class="input-group">
 										    <input type="text" class="form-control" id="inputLength" value="100">
 										    <div class="input-group-addon">см.</div>
@@ -159,8 +159,8 @@
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12">
 								<div class="form-group">
-								    <label for="inputHeight" class="col-sm-6 control-label">ВИСОТА</label>
-								    <div class="col-sm-6">
+								    <label for="inputHeight" class="col-sm-5 col-xs-5 control-label">ВИСОТА</label>
+								    <div class="col-sm-7 col-xs-5">
 										<div class="input-group">
 											<input type="text" class="form-control" id="inputHeight" value="100">
 										    <div class="input-group-addon">см.</div>
@@ -170,8 +170,8 @@
 							</div>
 							<div class="col-md-3 col-sm-6 col-xs-12">
 								<div class="form-group">
-								    <label for="inputWidth" class="col-sm-6 control-label">ШИРИНА</label>
-								    <div class="col-sm-6">
+								    <label for="inputWidth" class="col-sm-5 col-xs-5 control-label">ШИРИНА</label>
+								    <div class="col-sm-7 col-xs-5">
 										<div class="input-group">
 											<input type="text" class="form-control" id="inputWidth" value="100">
 										    <div class="input-group-addon">см.</div>
@@ -276,55 +276,7 @@
 	</div>
 </div>
 <!-- END out-->
-<a href="#" class="js-show-popup" data-popup="js-popup-feedback" style="position: fixed; top: 0; left: 0; diplsay:block; background: white; border: 1px solid #333; font-size: 1.4rem; padding: 5px">popup-feedback</a> 
-<div class="popup js-popup js-popup-feedback" style="display: block">
-	<div class="popup__main js-popup-in">
-		<div class="title">Форма зворотнього зв’язку</div>
-		<button type="button"  class="popup__close js-close-popup"><i class="icon-close"></i></button>
-		<form action="#">
-			<div class="form-horizontal feedback-form">
-				<div class="form-group">
-					<div class="row">
-						<div class="col-sm-4 text-right">
-							<label for="inputName" class="control-label">ВАШЕ ІМ’Я</label>
-						</div>
-						<div class="col-sm-5">
-							<input type="text" class="form-control" id="inputName" required>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4 text-right">
-							<label for="inputPhone" class="control-label">ТЕЛЕФОН</label>
-						</div>
-						<div class="col-sm-5">
-							<input type="tel" class="form-control" id="inputPhone" placeholder="+380" required>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4 text-right">
-							<label for="inputMail" class="control-label">E-MAIL</label>
-						</div>
-						<div class="col-sm-5">
-							<input type="email" class="form-control" id="inputMail" required>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4 text-right">
-							<label for="inputText" class="control-label">ПИТАННЯ</label>
-						</div>
-						<div class="col-sm-5">
-							<textarea class="form-control" rows="8"></textarea>
-						</div>
-					</div>
-					<div class="row">
-						<button class="btn btn_action btn_width-xs feedback-form__submit" type="submit">ВІДПРАВИТИ</button>
-					</div>
-				</div>
-			</div>
-		</form>
-	</div>
-</div>
-
+//= partials/popups.html
 //= partials/footer.html
 //= partials/scripts.html
 </body>

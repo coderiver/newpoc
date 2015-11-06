@@ -11,7 +11,7 @@
 	&__info
 		position: relative
 		z-index: 2
-		padding: 2.7rem 5.8rem 2rem 0 
+		padding: 2.7rem 5.8rem 8rem 0 
 		width: 54%
 		float: right
 		+msans_300
@@ -27,6 +27,9 @@
 		+m_500
 		font-size: 6rem
 		line-height: 1.2
+		+r(1100)
+			font-size: 4.5rem
+			width: 100%
 	&__img
 		position: absolute
 		left: 0
@@ -36,6 +39,9 @@
 			display: block
 			width: 100%
 			height: auto
+	.btn-link
+		+r(1023)
+			color: #fff 
 .section
 	margin: 3rem 0
 
@@ -73,6 +79,7 @@
 		top: 3.5rem
 		+s(arrow1)
 	+r(767)
+		padding: 0 5% 
 		&:after
 			display: none
 	&:last-child
@@ -119,3 +126,6 @@
 		.control-label_big
 			+rm(992)
 				font-size: 2.4rem 	
+.tracking
+	+r(767)
+		text-align: center

@@ -5,17 +5,28 @@
 			margin-bottom: 0
 	&__list
 		text-align: justify
+		+r(1100)
+			text-align: left
 		&:after
 			content: ""
 			width: 100%
 			height: 0
 			display: inline-block 
-	&__link
+	li
+		display: inline-block
+		+r(992)
+			display: block
+			margin-bottom: 0.5rem
+	a
 		color: #000
 		text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff
 		position: relative
 		z-index: 2
 		display: inline-block
+		+r(1100)
+			margin: 0 1rem 1rem 0
+		+r(767)
+			padding: 2px 0 
 		&:after
 			content: ''
 			position: absolute
@@ -34,8 +45,13 @@
 	margin-top: 3rem 	
 	margin-bottom: -5rem 
 	.store
-		margin-bottom: 10rem 			
+		margin-bottom: 10rem 
+		+r(767)
+			margin-bottom: 5rem			
 .store
+	+r(767)
+		text-align: center
+		padding: 0 2rem 
 	&__img
 		margin-bottom: 2.3rem 
 		height: 10rem
@@ -53,23 +69,33 @@
 .cabinet
 	background: $primary
 	padding: 1.3rem 0
+	+r(992)
+		padding: 3rem 0 
 	&__item
 		position: relative
-		+vertical
 		text-align: left
 		font-size: 1.8rem
 		height: 5rem  
+		line-height: 5rem
+		+r(1200)
+			height: auto
+			line-height: 1.2
 		&:after
 			content: ''
 			position: absolute
-			right: -15px
+			right: -10px
 			top: 0
 			height: 50px 
 			width: 1px
 			background: #fff 
+			+r(992)
+				display: none
 		&-in
 			display: inline-block
+			line-height: 1.2
 			vertical-align: middle 
+			+r(992)
+				display: block
 	.row
 		> div:last-child
 			> div:last-child
@@ -77,13 +103,23 @@
 					&:after
 						display: none
 	.header-help
-		margin-left: -15px 
+		//margin-left: -15px 
+		+r(767)
+			margin-left: 0
 	.logout
-		margin-left: 15px 
+		//margin-left: 15px 
+		+r(992)
+			text-align: right
+		+r(767)
+			text-align: left
+			margin-left: 0
 .user
+	+r(992)
+		margin-bottom: 2rem
 	&__name
 		color: #fff
 		display: block
+		+text-overflow
 		i, span
 			vertical-align: middle
 			display: inline-block
@@ -99,11 +135,20 @@
 				font-size: 1.4rem 
 				color: #fff
 .balance
+	+r(992)
+		text-align: right
+	+r(767)
+		text-align: left
 	&__number
 		color: #fff
 		display: inline-block
 		margin-right: 1.5rem
+	&:after
+		+r(992)
+			display: none
 .header-help
+	+r(767)
+		margin: 2rem 0 
 	a
 		display: block
 		color: #fff
@@ -112,6 +157,10 @@
 		&:last-child
 			margin-bottom: 0
 .logout
+	+r(992)
+		margin-bottom: 2rem
+	+r(767)
+		margin-bottom: 0
 	i
 		display: inline-block
 		vertical-align: middle
@@ -158,3 +207,10 @@
 .no-scroll
 	overflow: hidden
 	-webkit-overflow-scrolling: auto
+.registration
+	.form-group
+		+r(767)
+			margin-bottom: 2rem
+	.checkbox-inline
+		+r(767)
+			margin: 3rem 0

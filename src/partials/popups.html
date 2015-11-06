@@ -1,0 +1,47 @@
+<div class="popup js-popup js-popup-feedback">
+	<div class="popup__main js-popup-in">
+		<div class="title">Форма зворотнього зв’язку</div>
+		<button type="button"  class="popup__close js-close-popup"><i class="icon-close"></i></button>
+		<form action="#">
+			<div class="form-horizontal feedback-form">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputName" class="control-label">ВАШЕ ІМ’Я</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="text" class="form-control" id="inputName" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputPhone" class="control-label">ТЕЛЕФОН</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="tel" class="form-control" id="inputPhone" placeholder="+380" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputMail" class="control-label">E-MAIL</label>
+						</div>
+						<div class="col-sm-5">
+							<input type="email" class="form-control" id="inputMail" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 text-right">
+							<label for="inputText" class="control-label">ПИТАННЯ</label>
+						</div>
+						<div class="col-sm-5">
+							<textarea class="form-control" rows="8"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<button class="btn btn_action btn_width-xs feedback-form__submit" type="submit">ВІДПРАВИТИ</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
